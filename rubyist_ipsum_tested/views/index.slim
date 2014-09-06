@@ -1,0 +1,19 @@
+doctype html
+html
+  head
+    title Welcome to Rubyist Ipsum!
+
+  body
+
+    h1#title Rubyist Ipsum
+
+    p#description This is a twist on a lorem ipsum generator - for things Rubyists say.
+
+    p Give me at least this many words:
+
+    form action='/'
+      input name='words' type='number' value=params[:words]
+      input#words_submit type='submit'
+
+    p#generated_ipsum
+      = ipsum_with_count params[:words]
